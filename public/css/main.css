@@ -1,0 +1,17 @@
+.arch {
+	height: 50px;
+	width: 50px;
+
+}
+#1 {
+	background-color: red;
+}
+#2 {
+	background-color: blue;
+}
+#3 {
+	background-color: yellow;
+}
+#4 {
+	background-color: green;
+}
