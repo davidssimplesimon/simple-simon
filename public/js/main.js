@@ -1,12 +1,18 @@
 // (function() {
 function random () {
-	Math.floor(Math.random() * (4));
+	return Math.floor(Math.random() * (4));
 };
 var arches = $('.arch');
 //round 1
 $('#start').click(function() {
-	$(arches[random()]).css('background-color', 'white');
-	console.log(arches[random()]);
+	var randomArch = random();
+	var pattern = [randomArch];
+	$(arches[randomArch]).css('border', '4px solid black');
+	setTimeout(function() {
+		$(arches[randomArch]).css('border', 'none');
+	}, 3000);
+	
 })
+
 
 // })();
