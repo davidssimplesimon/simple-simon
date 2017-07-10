@@ -1,6 +1,6 @@
 .arch {
-	height: 20vh;
-	width: 20vw;
+	height: 50px;
+	/*width: 20vw;*/
 }
 
 #red {
@@ -19,7 +19,7 @@
 	background-color: green;
 }
 #start {
-	height: 20vh;
-	width: 20vw;
+	height: 50vh;
+	/*width: 20vw;*/
 	background-color: #e0e0e0;
 }
