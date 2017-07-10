@@ -1,17 +1,25 @@
 .arch {
-	height: 50px;
-	width: 50px;
-
+	height: 20vh;
+	width: 20vw;
 }
-#1 {
+
+#red {
 	background-color: red;
 }
-#2 {
+
+#blue {
 	background-color: blue;
 }
-#3 {
+
+#yellow {
 	background-color: yellow;
 }
-#4 {
+
+#green {
 	background-color: green;
+}
+#start {
+	height: 20vh;
+	width: 20vw;
+	background-color: #e0e0e0;
 }
