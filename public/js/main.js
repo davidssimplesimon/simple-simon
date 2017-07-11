@@ -33,11 +33,7 @@
 			$('#round').html(patternArray.length);
 		};
 	};
-	$('#start').click(function() {
-		$('#start_button').html('Reset');
-		$('#start_button').click(function() {
-			location.reload();
-		});	
+	function runGame() {
 		$(arches[randomArch]).css('border', '4px solid #ff8f00');
 		setTimeout(function() {
 			$(arches[randomArch]).css('border', 'none');
@@ -48,17 +44,36 @@
 			displayPattern();
 		});	
 		$(document).keyup(function(event) {
-			if(event.keyCode == 38) {
+			if(event.keyCode === 38) {
 				userPatternArray.push(0);
-			} else if(event.keyCode == 40) {
+			} else if(event.keyCode === 40) {
 				userPatternArray.push(3);
-			} else if(event.keyCode == 37) {
+			} else if(event.keyCode === 37) {
 				userPatternArray.push(1);
-			} else if(event.keyCode == 39) {
+			} else if(event.keyCode === 39) {
 				userPatternArray.push(2);
 			}
 			gameOver();
 			displayPattern();
-		})
+		});
+	};
+	$('#start').click(function() {
+		$('#start_button').html('Reset');
+		$('#start_button').click(function() {
+			location.reload();
+		});	
+		runGame();
+	});
+	$(document).keyup(function() {
+		if(event.keyCode === 13) {
+			console.log('firing');
+			$('#start_button').html('Reset');
+			$(document).keyup(function() {
+				if(event.keyCode === 13) {
+					location.reload();
+				};
+			});
+			runGame();
+		};
 	});
 })();

@@ -1,10 +1,11 @@
 body {
 	background-color: #000;
 }
-
+#padding {
+	height: 20vh;
+}
 .arch {
 	height: 20vh;
-
 }
 
 #red {
@@ -26,4 +27,8 @@ body {
 	text-align: center;
 	/*width: 20vw;*/
 	background-color: #e0e0e0;
+	border-radius: 180px;
+}
+#start_button {
+	border-radius: 180px 180px 5px 5px;
 }
