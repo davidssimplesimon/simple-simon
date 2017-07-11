@@ -4,14 +4,12 @@ body {
 
 .arch {
 	height: 20vh;
-	/*width: 20vw;*/
+
 }
 
 #red {
 	background-color: red;
-	padding
 }
-
 #blue {
 	background-color: blue;
 }
