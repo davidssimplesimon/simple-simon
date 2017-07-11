@@ -15,7 +15,7 @@ $('#start').click(function() {
 	$(arches[randomArch]).css('border', '4px solid black');
 	setTimeout(function() {
 		$(arches[randomArch]).css('border', 'none');
-	}, 2000);
+	}, 1000);
 
 	$(arches).click(function(event) {
 		userPattern += event.target.dataset.index;			
@@ -24,14 +24,16 @@ $('#start').click(function() {
 			console.log('patterns match!');
 			randomArch = random();
 			pattern += randomArch;
-			console.log('Adding to pattern...');
+			console.log('Adding to pattern with a new random number...');
 			console.log('pattern: ' + pattern);
+
 			userPattern = '';
 			$(arches[randomArch]).css('border', '4px solid black');
 			setTimeout(function() {
 				$(arches[randomArch]).css('border', 'none');
 			}, 3000);
 		};
+			
 	});
 	
 });
