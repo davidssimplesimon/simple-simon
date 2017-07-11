@@ -26,12 +26,16 @@ $('#start').click(function() {
 			pattern += randomArch;
 			console.log('Adding to pattern with a new random number...');
 			console.log('pattern: ' + pattern);
-
 			userPattern = '';
-			$(arches[randomArch]).css('border', '4px solid black');
-			setTimeout(function() {
-				$(arches[randomArch]).css('border', 'none');
-			}, 3000);
+			patternArray = pattern.split('');
+			patternArray.forEach(function(element, index, array) {					
+				setTimeout(function() {
+						$(arches[element]).css('border', '4px solid black');
+					setTimeout (function() {
+						$(arches[element]).css('border', 'none');						
+					}, 1000);
+				}, 1500 * index);
+			});
 		};
 			
 	});
