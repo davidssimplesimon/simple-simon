@@ -45,12 +45,28 @@
 		});	
 		$(document).keyup(function(event) {
 			if(event.keyCode === 38) {
+				$("#red").css('transform', 'translateY(10px)');
+				setTimeout(function() {
+					$('#red').css('transform', 'none');
+				}, 250);
 				userPatternArray.push(0);
 			} else if(event.keyCode === 40) {
+				$("#green").css('transform', 'translateY(10px)');
+				setTimeout(function() {
+					$('#green').css('transform', 'none');
+				}, 250);
 				userPatternArray.push(3);
 			} else if(event.keyCode === 37) {
+				$("#blue").css('transform', 'translateY(10px)');
+				setTimeout(function() {
+					$('#blue').css('transform', 'none');
+				}, 250);
 				userPatternArray.push(1);
 			} else if(event.keyCode === 39) {
+				$("#yellow").css('transform', 'translateY(10px)');
+				setTimeout(function() {
+					$('#yellow').css('transform', 'none');
+				}, 250);
 				userPatternArray.push(2);
 			}
 			gameOver();

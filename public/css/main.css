@@ -10,17 +10,40 @@ body {
 
 #red {
 	background-color: red;
+	cursor: pointer;
+
+}
+#red:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
 }
 #blue {
 	background-color: blue;
+	cursor: pointer;
 }
-
+#blue:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
 #yellow {
 	background-color: yellow;
+	cursor: pointer;
 }
-
+#yellow:active {
+  background-color: yellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
 #green {
 	background-color: green;
+	cursor: pointer;
+}
+#green:active {
+  background-color: green;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
 }
 #start {
 	height: 20vh;
