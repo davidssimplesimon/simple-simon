@@ -10,10 +10,11 @@ body {
 
 
 #red {
-	background-color: red;
+	background-image: url(https://media.giphy.com/media/FC4WzgUnsT57i/giphy.gif);
 	cursor: pointer;
 	border-radius: 50px;
 	margin-bottom: 10px;
+	background-size: 100% 100%;
 }
 #red:active {
  	background-color: red;
@@ -21,10 +22,11 @@ body {
  	transform: translateY(10px);
 }
 #blue {
-	background-color: blue;
+	background-image: url(https://media.giphy.com/media/BarqgIZ0PdkQg/giphy.gif);
 	cursor: pointer;
 	border-radius: 50px;
 	margin-right: 10px;
+	background-size: 100% 100%;
 }	
 
 #blue:active {
@@ -33,10 +35,11 @@ body {
   	transform: translateY(10px);
 }
 #yellow {
-	background-color: yellow;
+	background-image: url(https://media.giphy.com/media/3oKIPwoeGErMmaI43S/giphy.gif);
 	cursor: pointer;
 	border-radius: 50px;
 	margin-left: 10px;
+	background-size: 100% 100%;
 }
 #yellow:active {
  	background-color: yellow;
@@ -44,10 +47,11 @@ body {
 	transform: translateY(10px);
 }
 #green {
-	background-color: green;
+	background-image: url(https://media.giphy.com/media/3aGxY6y8KY8i4/giphy.gif);
 	cursor: pointer;
 	border-radius: 50px;
 	margin-top: 10px;
+	background-size: 100% 100%;
 }
 #green:active {
  	background-color: green;
