@@ -3,6 +3,7 @@
 	var randomArch = random();
 	var patternArray = [randomArch];
 	var userPatternArray = [];
+	var delay = 1010;
 	function random () {
 		return Math.floor(Math.random() * (4));
 	};
@@ -18,20 +19,23 @@
 		};
 	};
 	function displayPattern() {
-		if (userPatternArray.length == patternArray.length) {
-			randomArch = random();
-				patternArray.push(randomArch);
-				userPatternArray = [];
-				patternArray.forEach(function(element, index, array) {					
-					setTimeout(function() {
-							$(arches[element]).css('border', '4px solid #ff8f00');
-						setTimeout (function() {
-							$(arches[element]).css('border', 'none');						
-						}, 1000);
-					}, 1500 * index);
-				});
-			$('#round').html(patternArray.length);
-		};
+		setTimeout(function() {
+			if (userPatternArray.length == patternArray.length) {
+				randomArch = random();
+					patternArray.push(randomArch);
+					userPatternArray = [];
+					console.log(patternArray.length);
+					patternArray.forEach(function(element, index, array) {					
+						setTimeout(function() {
+								$(arches[element]).css('border', '4px solid #ff8f00');
+							setTimeout (function() {
+								$(arches[element]).css('border', 'none');						
+							}, delay - (100 * patternArray.length));
+						}, (((delay + 1000) - (100 * patternArray.length)) * index));
+					});
+				$('#round').html(patternArray.length);
+			};
+		}, 1000);
 	};
 	function runGame() {
 		$(arches[randomArch]).css('border', '4px solid #ff8f00');
@@ -82,7 +86,6 @@
 	});
 	$(document).keyup(function() {
 		if(event.keyCode === 13) {
-			console.log('firing');
 			$('#start_button').html('Reset');
 			$(document).keyup(function() {
 				if(event.keyCode === 13) {
