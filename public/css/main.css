@@ -8,10 +8,11 @@ body {
 	height: 20vh;
 }
 
+
 #red {
 	background-color: red;
 	cursor: pointer;
-
+	border-radius: 50px;
 }
 #red:active {
   background-color: red;
@@ -21,7 +22,9 @@ body {
 #blue {
 	background-color: blue;
 	cursor: pointer;
-}
+	border-radius: 50px;
+}	
+
 #blue:active {
   background-color: blue;
   box-shadow: 0 5px #666;
@@ -30,6 +33,7 @@ body {
 #yellow {
 	background-color: yellow;
 	cursor: pointer;
+	border-radius: 50px;
 }
 #yellow:active {
   background-color: yellow;
@@ -39,6 +43,7 @@ body {
 #green {
 	background-color: green;
 	cursor: pointer;
+	border-radius: 50px;
 }
 #green:active {
   background-color: green;
