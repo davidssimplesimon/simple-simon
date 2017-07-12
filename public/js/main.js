@@ -10,11 +10,17 @@
 	function gameOver() {
 		for (var i = 0; i < userPatternArray.length; i++) {
 			if (userPatternArray[i] != patternArray[i]) {
-				var playAgain = confirm('Game over! Would you like to play again?');
-					if (playAgain) {
-						location.reload();
-					};
-				return;
+				$('.arch').addClass('hidden');
+				$('#start').addClass('hidden');
+				$('body').addClass('game_over');
+				$('body').html('<audio autoplay><source src="/mp3/Bomb_Exploding-Sound_Explorer-68256487.mp3" type="audio/mpeg"></audio>');
+				setTimeout(function() {
+					var playAgain = confirm('Game over! Would you like to play again?');
+						if (playAgain) {
+							location.reload();
+						};
+					return;
+				}, 4500);
 			};		
 		};
 	};
@@ -38,7 +44,7 @@
 		}, 1000);
 	};
 	function runGame() {
-		$(arches[randomArch]).css('border', '4px solid #fff');
+		$(arches[randomArch]).css('border', '10px solid #fff');
 		setTimeout(function() {
 			$(arches[randomArch]).css('border', 'none');
 		}, 1000);	
@@ -86,6 +92,11 @@
 	});
 	$(document).keyup(function() {
 		if(event.keyCode === 13) {
+			$("#start_button").css('transform', 'translateY(10px)');
+				setTimeout(function() {
+					$('#start_button').css('transform', 'none');
+				}, 250);
+				userPatternArray.push(0);
 			$('#start_button').html('Reset');
 			$(document).keyup(function() {
 				if(event.keyCode === 13) {

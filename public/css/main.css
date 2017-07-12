@@ -67,4 +67,16 @@ body {
 }
 #start_button {
 	border-radius: 50px;
+	cursor: pointer;
+}
+#start_button:active {
+ 	box-shadow: 0 5px #666;
+ 	transform: translateY(10px);
+}
+.game_over {
+	background-image: url(https://media.giphy.com/media/3o6ozEVrEqZbHHz81G/giphy.gif);
+	background-size: 100vw 100vh;
+}
+.hidden {
+	display: none;
 }
