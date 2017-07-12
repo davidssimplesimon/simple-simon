@@ -27,7 +27,7 @@
 					console.log(patternArray.length);
 					patternArray.forEach(function(element, index, array) {					
 						setTimeout(function() {
-								$(arches[element]).css('border', '4px solid #ff8f00');
+								$(arches[element]).css('border', '10px solid #fff');
 							setTimeout (function() {
 								$(arches[element]).css('border', 'none');						
 							}, delay - (100 * patternArray.length));
@@ -38,7 +38,7 @@
 		}, 1000);
 	};
 	function runGame() {
-		$(arches[randomArch]).css('border', '4px solid #ff8f00');
+		$(arches[randomArch]).css('border', '4px solid #fff');
 		setTimeout(function() {
 			$(arches[randomArch]).css('border', 'none');
 		}, 1000);	

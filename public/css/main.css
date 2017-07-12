@@ -13,50 +13,54 @@ body {
 	background-color: red;
 	cursor: pointer;
 	border-radius: 50px;
+	margin-bottom: 10px;
 }
 #red:active {
-  background-color: red;
-  box-shadow: 0 5px #666;
-  transform: translateY(10px);
+ 	background-color: red;
+ 	box-shadow: 0 5px #666;
+ 	transform: translateY(10px);
 }
 #blue {
 	background-color: blue;
 	cursor: pointer;
 	border-radius: 50px;
+	margin-right: 10px;
 }	
 
 #blue:active {
-  background-color: blue;
-  box-shadow: 0 5px #666;
-  transform: translateY(10px);
+  	background-color: blue;
+  	box-shadow: 0 5px #666;
+  	transform: translateY(10px);
 }
 #yellow {
 	background-color: yellow;
 	cursor: pointer;
 	border-radius: 50px;
+	margin-left: 10px;
 }
 #yellow:active {
-  background-color: yellow;
-  box-shadow: 0 5px #666;
-  transform: translateY(10px);
+ 	background-color: yellow;
+	box-shadow: 0 5px #666;
+	transform: translateY(10px);
 }
 #green {
 	background-color: green;
 	cursor: pointer;
 	border-radius: 50px;
+	margin-top: 10px;
 }
 #green:active {
-  background-color: green;
-  box-shadow: 0 5px #666;
-  transform: translateY(10px);
+ 	background-color: green;
+ 	box-shadow: 0 5px #666;
+ 	transform: translateY(10px);
 }
 #start {
 	height: 20vh;
 	text-align: center;
 	/*width: 20vw;*/
 	background-color: #e0e0e0;
-	border-radius: 180px;
+	border-radius: 50px
 }
 #start_button {
-	border-radius: 180px 180px 5px 5px;
+	border-radius: 50px;
 }
